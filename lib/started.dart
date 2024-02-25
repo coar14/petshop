@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:petshop/store_page.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:petshop/screen/catalog.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class StartPage extends StatelessWidget {
+  const StartPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -68,23 +69,45 @@ class HomePage extends StatelessWidget {
                     ],
                   ),
                   const SizedBox(height: 16),
-                  const Text(
-                    "Your One-Stop Pet Shop Experience!",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w700,
-                      fontSize: 26,
-                    ),
+                  Text(
+                    "Your One-Stop Pet Shop \nExperience!",
+                    textAlign: TextAlign.center,
+                    style: GoogleFonts.poppins(
+                          color: Colors.black,
+                          fontSize: 26,
+                          fontWeight: FontWeight.bold,
+                        ),
                   ),
-                  const SizedBox(height: 10),
+                  const SizedBox(height: 5),
+                  Text(
+                      "Connect with 5-star pet caregivers near you \n who offer boarding, walking, house sitting or day care.",
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.poppins(
+                          fontSize: 16,
+                          color: Colors.grey,
+                          fontWeight: FontWeight.normal)),
+                          const SizedBox(height: 10),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const StoreScreen()),
+                        MaterialPageRoute(
+                            builder: (context) => const CatalogScreen()),
                       );
                     },
-                    child: const Text(
-                        'Proceed to Store'), 
+                    style: ElevatedButton.styleFrom(
+                      minimumSize: const Size(300, 45),
+                      backgroundColor: const Color(0xFFE8BE13),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10.0),
+                      ),
+                    ),
+                    child: Text('Get Started',
+                        style: GoogleFonts.inter(
+                          color: Colors.white,
+                          fontSize: 17.51,
+                          fontWeight: FontWeight.bold,
+                        )),
                   ),
                 ],
               ),
