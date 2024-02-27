@@ -73,10 +73,10 @@ class StartPage extends StatelessWidget {
                     "Your One-Stop Pet Shop \nExperience!",
                     textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
-                          color: Colors.black,
-                          fontSize: 26,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      color: Colors.black,
+                      fontSize: 26,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                   const SizedBox(height: 5),
                   Text(
@@ -86,7 +86,7 @@ class StartPage extends StatelessWidget {
                           fontSize: 16,
                           color: Colors.grey,
                           fontWeight: FontWeight.normal)),
-                          const SizedBox(height: 10),
+                  const SizedBox(height: 10),
                   ElevatedButton(
                     onPressed: () {
                       Navigator.push(
