@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:petshop/constant/bottom_navbar.dart';
 import 'package:petshop/constant/list.dart';
 import 'package:petshop/providers/cart_provider.dart';
 import 'package:provider/provider.dart';
