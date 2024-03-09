@@ -1,4 +1,6 @@
 [![Download](https://img.shields.io/pub/v/provider.svg)](https://pub.dev/packages/provider)
+[![GitHub stars](https://img.shields.io/github/stars/coar14/petshop.svg)](https://github.com/coar14/petshop/stargazers)
+
 # Flutter Provider State Management Example
 
 This repository demonstrates how to use the Provider package for state management in Flutter applications.
